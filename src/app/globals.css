@@ -24,3 +24,38 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* Contenedor de botones en AuthorsList */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* espacio entre botones */
+  margin-top: 1rem;
+}
+
+/* Botón Editar */
+.btn-edit {
+  @apply px-4 py-2 rounded bg-sky-500 hover:bg-sky-600 text-white;
+}
+
+/* Botón Eliminar */
+.btn-delete {
+  @apply px-4 py-2 rounded bg-rose-500 hover:bg-rose-600 text-white disabled:opacity-60;
+}
+
+/* Contenedor del formulario */
+.author-form {
+  @apply space-y-4 w-2/3 max-w-2xl mx-auto;
+}
+
+/* Inputs del formulario */
+.form-input {
+  @apply w-full p-2 border rounded bg-white text-black;
+}
+
+/* Botón de guardar */
+.btn-save {
+  @apply bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded disabled:bg-gray-300 block mx-auto;
+}
