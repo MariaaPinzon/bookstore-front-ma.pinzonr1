@@ -3,6 +3,10 @@
 // rafc -> react arrow function component for client components
 import {redirect} from "next/navigation";
 
-export default function HomePage(){
-  redirect('/home')
+// src/app/page.tsx
+
+export default function HomePage() {
+  return (
+    <h1>Hello Author</h1>
+  );
 }
